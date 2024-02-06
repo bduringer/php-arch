@@ -1,0 +1,21 @@
+{
+    "name": "bernardonummer/php_pro",
+    "description": "aprimorando meus conhecimentos em php",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        },
+        "files": [
+            "app/helpers/constants.php",
+            "app/router/router.php",
+            "app/core/controller.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "bernardo nummer",
+            "email": "bduringer@yahoo.com.br"
+        }
+    ],
+    "require": {}
+}

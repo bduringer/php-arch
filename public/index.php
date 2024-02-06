@@ -8,11 +8,14 @@ try {
     if(!isset($data['view'])){
         throw new Exception("O índice view esta faltando!");
     }
+    if(!isset($data['title'])){
+        throw new Exception("O índice título esta faltando!");
+    }
     if(!file_exists(VIEWS.'/'.$data['view'])){
         throw new Exception("A view {$data['view']} não existe!");
     }
     
-    extract($data['data']);
+    $dados = extract($data['data']);
     
     $view = $data['view'];
 

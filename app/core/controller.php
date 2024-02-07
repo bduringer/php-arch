@@ -17,5 +17,11 @@ function controller($matchedUri, $data){
 
     }
 
-    return $controllerInstance->$method($data);
+    $controller = $controllerInstance->$method($data);
+
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        die();
+    }
+
+    return $controller;
 }

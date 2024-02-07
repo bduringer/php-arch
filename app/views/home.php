@@ -9,6 +9,7 @@
 <body>
     <ol class="list-group list-group-numbered">
     <?php foreach ($users as $user) { ?>
+
         <!-- <div><?php echo $user->name; ?> | <a href="/user/<?php echo $user->id; ?>">Ver detalhes</a> </div> -->
         <!-- <hr> -->
         <li class="list-group-item d-flex justify-content-between align-items-start">

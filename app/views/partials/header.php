@@ -17,8 +17,13 @@
         </li>
       </ul>
     </div>
-  </div>
-  <div id="status_login">
-      Bem vindo visitante
+    <div class="d-flex gap-2">
+        <?php if(logged()) {?>
+          <div>Bem vindo, <?php echo user()->name; ?>!</div><a href="/logout">Logout</a>
+        <?php } else {?>
+          <div>Bem vindo, visitante!</div>
+        <?php } ?>
+  
+    </div>
   </div>
 </nav>
